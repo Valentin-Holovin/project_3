@@ -1,0 +1,18 @@
+import { Icon, IIconProps } from 'native-base';
+import * as React from 'react';
+import { Path } from 'react-native-svg';
+
+export const FilteredIcon = ({ fill = '#000', ...props }: IIconProps) => {
+  return (
+    <Icon width={24} height={24} viewBox='0 0 24 24' fill='none' {...props}>
+      <Path
+        d='M22.5 8.56L21.44 7.5 18 10.94 14.56 7.5 13.5 8.56 16.94 12l-3.44 3.439 1.061 1.061L18 13.06l3.44 3.44 1.06-1.06L19.06 12l3.44-3.44z'
+        fill='#303030'
+      />
+      <Path
+        d='M3 3a1.5 1.5 0 00-1.5 1.5v2.378a1.5 1.5 0 00.44 1.06L7.5 13.5v6A1.5 1.5 0 009 21h3a1.5 1.5 0 001.5-1.5V18H12v1.5H9v-6.623l-.44-.438L3 6.879V4.5h15V6h1.5V4.5A1.5 1.5 0 0018 3H3z'
+        fill='#303030'
+      />
+    </Icon>
+  );
+};

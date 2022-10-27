@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "barduck",
+    "scheme": "barduck",
+    "slug": "barduck",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "MEDIA_LIBRARY",
+        "INTERNET",
+        "SCHEDULE_EXACT_ALARM",
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "package": "com.barduckapp.barduck",
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": "true"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./src/assets/icon_push_notifications.png"
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+export const REQUIRE_MESSAGE = 'Обязательное поле';
+export const INCORRECT_LOGIN = 'Некорректный логин';
+export const INCORRECT_PROJECT_NAME = 'Некорректное название проекта';
+export const INCORRECT_TASK_NAME = 'Некорректное название задачи';
+export const INCORRECT_TASK_PRICE = 'Некорректная цена реализации';
+export const INCORRECT_PASSWORD = 'Некорректный пароль';
+export const INCORRECT_MIN_LENGTH_3 = 'Минимальное количество символов 3';
+export const INCORRECT_MAX_LENGTH_16 = 'Максимальное количество символов 16';
+export const INCORRECT_MAX_LENGTH_20 = 'Максимальная длина 20';
+export const TITLE_TOO_LONG = 'Длина заголовка не должна превышать 255 символов';

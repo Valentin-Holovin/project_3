@@ -1,0 +1,21 @@
+overwrite: true
+schema: 'https://barduck.demo.malevich.com.ua/graphql'
+documents: 'src/**/*.{js,jsx,ts,tsx,graphql}'
+generates:
+  src/graphql/generated/index.ts:
+    hooks:
+      afterOneFileWrite:
+        - prettier --write
+        - eslint --fix
+    plugins:
+      - add:
+          content: "/* eslint-disable unicorn/no-abusive-eslint-disable */ \n /* eslint-disable */"
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      withHooks: true
+      reactApolloVersion: 3
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'

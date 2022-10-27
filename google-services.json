@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25056385240",
+    "project_id": "burduck-79304",
+    "storage_bucket": "burduck-79304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25056385240:android:16f7cf743ea84bad58dfad",
+        "android_client_info": {
+          "package_name": "com.barduckapp.barduck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25056385240-9n02nb27tqgb827ob8k0cln0nq3sgefi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPsX0m5X73vx4FyleEUmvV6Mi39xkqt8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25056385240-9n02nb27tqgb827ob8k0cln0nq3sgefi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
